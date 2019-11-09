@@ -15,6 +15,7 @@ It is useful when you need to simulate a wireless network on a Linux network ser
 especially when you are using a virtual machine guest on your local machine or in the cloud.
 
 %install
+mkdir -p %{buildroot}%{_bindir}
 %{__install} -m 755 %{SOURCE0} %{buildroot}/%{_bindir}/%{name}
 
 %files
